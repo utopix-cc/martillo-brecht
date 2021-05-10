@@ -961,7 +961,7 @@ textarea {
   .main__left > header {
     padding: 0 4%;
     position: absolute;
-    top: calc(var(--navbar-height) + 3.75rem);
+    bottom: 1em;
   }
 }
 @media all and (min-width: 56.25em) and (max-width: 112.4375em) {
