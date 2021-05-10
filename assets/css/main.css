@@ -1088,7 +1088,7 @@ textarea {
 }
 
 .feed__item {
-  padding-bottom: 3.75rem;
+  padding-bottom: 1rem;
 }
 .feed__item:nth-child(1) h2 {
   margin-top: 0;
