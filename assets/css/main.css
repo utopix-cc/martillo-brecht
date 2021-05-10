@@ -204,6 +204,7 @@ h1 {
   line-height: 1.1;
   margin: 0;
   text-transform: var(--headings-transform);
+    background: var(--black);
 }
 h1 {
   font-size: 1.423828125rem;
@@ -221,6 +222,7 @@ h1 {
 
 h2 {
   font-size: 1.265625rem;
+  margin-top: 0.7rem;
 }
 @media screen and (min-width: 20rem) {
   h2 {
@@ -395,14 +397,15 @@ figcaption {
   text-align: center;
 }
 
+hr.headinghr {
+    width: 10%;
+    border-top: 1em solid #ED1D23;
+}
+
 hr,
 .separator {
 width:25%;
-border: none;
-height: 2px;
-/* Set the hr color */
-color: #000; /* old IE */
-background-color: #000; /* Modern Browsers */
+border-top: 3px solid #000:
 }
 
 
@@ -762,6 +765,7 @@ textarea {
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   text-decoration: none !important;
+  background: var(--color);
 }
 .logo:focus {
   outline: none;
@@ -969,7 +973,7 @@ textarea {
   .main__left > header {
     padding: 0 4%;
     position: absolute;
-    top: calc(var(--navbar-height) + 3.75rem);
+    bottom: 2em;
   }
 }
 @media all and (min-width: 56.25em) and (max-width: 112.4375em) {
@@ -1038,7 +1042,6 @@ textarea {
   z-index: 1;
 }
 .hero::after {
-  background: var(--hero-overlay);
   content: "";
   display: block;
   height: 100%;
