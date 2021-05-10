@@ -30,6 +30,10 @@
   --headings-color: #262626;
 }
 
+p.nota {
+    font-size: 0.8em;
+}
+
 .facebook:hover svg {
   fill: #3b5998;
 }
@@ -381,22 +385,14 @@ figcaption {
 
 hr,
 .separator {
-  background: none;
-  border: none;
-  height: auto;
-  line-height: 1;
-  max-width: none;
-  text-align: center;
+width:25%;
+border: none;
+height: 2px;
+/* Set the hr color */
+color: #000; /* old IE */
+background-color: #000; /* Modern Browsers */
 }
-hr::before,
-.separator::before {
-  content: "···";
-  color: var(--dark);
-  font-size: 1.423828125rem;
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 1.265625rem;
-  padding-left: 1.265625rem;
-}
+
 
 sub,
 sup {
@@ -961,7 +957,7 @@ textarea {
   .main__left > header {
     padding: 0 4%;
     position: absolute;
-    bottom: 1em;
+    top: calc(var(--navbar-height) + 3.75rem);
   }
 }
 @media all and (min-width: 56.25em) and (max-width: 112.4375em) {
