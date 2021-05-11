@@ -208,15 +208,22 @@ h1 {
 }
 h1 {
   font-size: 1.423828125rem;
+  display:none;
 }
 @media screen and (min-width: 20rem) {
   h1 {
     font-size: calc(1.423828125rem + 1.8234929005 * ((100vw - 20rem) / 220));
+
   }
 }
 @media screen and (min-width: 240rem) {
   h1 {
     font-size: 3.2473210255rem;
+  }
+}
+@media all and (min-width: 56.25em) {
+  h1{
+    display:block;
   }
 }
 
